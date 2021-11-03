@@ -1,0 +1,63 @@
+/* Other rules */
+
+
+.App {
+    width: 1920px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+header{
+    max-width: 1440px;
+    display: flex;
+    height: 200px;
+    padding: 50px 100px
+}
+
+header .fas{
+    
+    color: #5C48D3;
+    padding-right: 50px
+}
+
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    max-width: 300px;
+    margin: 0 auto
+}
+
+button{
+    background-color: inherit;
+    border: inherit
+}
+
+.minus-button, .plus-button{
+
+
+}
+
+.counter{
+    width: 50%;
+    height: 100%;
+    color: white;
+    background-color: #5C48D3;
+    border-radius: 20%;
+}
+.counter span{
+    display: flex;
+    height: 100%;
+    font-size: 96px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
