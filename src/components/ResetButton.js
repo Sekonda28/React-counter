@@ -1,9 +1,13 @@
-const ResetButton = ({ setCounter, resetValue }) => {
-    const handleClick = () => {
-      setCounter(resetValue);
-    };
-  
-    return <button className = "reset-button" onClick={handleClick}>Reset</button>;
+const ResetButton = (props) => {
+  const handleClick = () => {
+    props.setCounter(props.resetValue);
   };
-  
-  export default ResetButton;
+
+  return (
+    <button className="reset-button" onClick={handleClick}>
+      Reset
+    </button>
+  );
+};
+
+export default ResetButton;

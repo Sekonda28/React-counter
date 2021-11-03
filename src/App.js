@@ -15,7 +15,6 @@ const App = () => {
       <Header />
 
       <div className="container">
-  
         <div className="row-1">
           <MinusButton counter={counter} setCounter={setCounter} />
 
