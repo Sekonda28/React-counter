@@ -4,6 +4,7 @@ import PlusButton from "./components/PlusButton";
 import ResetButton from "./components/ResetButton";
 import { useState } from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [counter, setCounter] = useState(0);
@@ -12,17 +13,21 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <div className="row-1">
-        <MinusButton counter={counter} setCounter={setCounter} />
 
-        <div className="counter">
-          <span>{counter}</span>
+      <div className="container">
+  
+        <div className="row-1">
+          <MinusButton counter={counter} setCounter={setCounter} />
+
+          <div className="counter">
+            <span>{counter}</span>
+          </div>
+
+          <PlusButton counter={counter} setCounter={setCounter} />
         </div>
-
-        <PlusButton counter={counter} setCounter={setCounter} />
+        <ResetButton setCounter={setCounter} resetValue={resetValue} />
       </div>
-
-      <ResetButton setCounter={setCounter} resetValue={resetValue} />
+      <Footer />
     </div>
   );
 };

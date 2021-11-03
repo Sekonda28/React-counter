@@ -3,7 +3,7 @@ const ResetButton = ({ setCounter, resetValue }) => {
       setCounter(resetValue);
     };
   
-    return <button onClick={handleClick}>Reset</button>;
+    return <button className = "reset-button" onClick={handleClick}>Reset</button>;
   };
   
   export default ResetButton;
