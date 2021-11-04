@@ -3,6 +3,7 @@
 
 .App {
     max-width: 1920px;
+    max-height: 100vh;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
 }
@@ -89,6 +90,8 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    bottom: 0;
+    text-align: center;
 }
 
 footer span {
@@ -101,7 +104,4 @@ footer span {
         padding: 50px;
     }
 
-    .container {
-        margin-bottom: 50px;
-    }
 }
